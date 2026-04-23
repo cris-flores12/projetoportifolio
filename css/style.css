@@ -1,0 +1,117 @@
+/* Layout geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho */
+header {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Seções */
+section {
+  padding: 20px;
+}
+
+/* Cards de projetos */
+.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #f9f9f9;
+}
+
+/* Formulário */
+form input, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+form button {
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #ffcc00;
+  color: #000;
+}
+
+/* Rodapé */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Menu vira lista vertical */
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* Imagem de perfil ocupa largura total */
+  img {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Cards se reorganizam em coluna */
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  header h2 {
+    font-size: 1em;
+  }
+
+  nav ul li a {
+    font-size: 0.9em;
+  }
+}
+
