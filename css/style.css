@@ -124,11 +124,18 @@ footer {
 }
 
 .contato-icons img {
-  width: 50px;               
+  width: 50px; 
+  max-width: 100%;
+  height: auto;              
   transition: transform 0.3s;
 }
 
 .contato-icons img:hover {
   transform: scale(1.2);     
+}
+@media(max-width:600px){
+  .contato-icons img{
+    width: 40px;
+  }
 }
 
