@@ -115,3 +115,20 @@ footer {
   }
 }
 
+.contato-icons {
+  display: flex;
+  justify-content: center;   
+  gap: 20px;                 
+  flex-wrap: wrap;         
+  margin-top: 15px;
+}
+
+.contato-icons img {
+  width: 50px;               
+  transition: transform 0.3s;
+}
+
+.contato-icons img:hover {
+  transform: scale(1.2);     
+}
+
