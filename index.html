@@ -1,116 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfólio Web</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Web</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-  <h3>Cristian Moraes Flores</h3>
-  <h2>Estudante de Programação Web</h2> 
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#conhecimentos">Conhecimentos</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <hr>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Cristian</h1>
+        <h2>Estudante de Programação Web</h2>
 
+        <!-- Botão de menu -->
+        <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
 
-  <section id="sobre">
-    <h2>Sobre Mim</h2>
-    <img src="img/imagem portifolio.jpeg" alt="Foto de perfil" width="150">
-    <p>Nome: Cristian Moraes Flores</p>
-    <p>Idade: 17 anos</p>
-    <p>Cursando no colégio ULBRA São Lucas. Gosto de tecnologia e estou sempre procurando aprender cada vez mais.</p>
-  </section>
+        <nav id="menu">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#conhecimentos">Conhecimentos</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <hr>
+    <hr>
 
- 
-  <section id="conhecimentos">
-    <h2>Conhecimentos</h2>
-    <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>GitHub</li>
-      <li>VS Code</li>
-      <li>Lógica de Programação</li>
-      <li>Banco de Dados</li>
-    </ul>
-  </section>
+    <!-- Sobre Mim -->
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <img src="img/perfil.jpg" alt="Foto de perfil" class="perfil">
+        <p>Tenho 17 anos, estudo Programação Web e busco me tornar desenvolvedor front-end. Meu objetivo é criar soluções digitais criativas e funcionais.</p>
+    </section>
 
-  <hr>
+    <hr>
 
- 
-  <section id="projetos">
-    <h2>Projetos</h2>
+    <!-- Conhecimentos -->
+    <section id="conhecimentos">
+        <h2>Conhecimentos</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="img/html5.png" alt="HTML5">
+                <p>HTML5</p>
+            </div>
+            <div class="card">
+                <img src="img/css3.png" alt="CSS3">
+                <p>CSS3</p>
+            </div>
+            <div class="card">
+                <img src="img/github.png" alt="GitHub">
+                <p>Git/GitHub</p>
+            </div>
+            <div class="card">
+                <img src="img/vscode.png" alt="VS Code">
+                <p>VS Code</p>
+            </div>
+            <div class="card">
+                <img src="img/logica.png" alt="Lógica de Programação">
+                <p>Lógica de Programação</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-      <h3>Projeto sobre o modelo freemium</h3>
-      <strong>Status:</strong> Publicado.
-      <a href="https://2009lucas.github.io/projFreemium/" target="_blank">
-        <img src="img/github.png" alt="Imagem do projeto freemium" width="150">
-      </a>
-    </div>
+    <hr>
 
-    <div class="card">
-      <h3>Quiz cinemático</h3>
-      <strong>Status:</strong> Publicado.
-      <a href="https://cris-flores12.github.io/projetos/" target="_blank">
-        <img src="img/github.png" alt="Imagem do projeto quiz" width="150">
-      </a>
-    </div>
+    <!-- Projetos -->
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Projeto 1</h3>
+                <p>Site de portfólio pessoal</p>
+                <span>Status: Concluído</span>
+            </div>
+            <div class="card">
+                <h3>Projeto 2</h3>
+                <p>Landing page de curso</p>
+                <span>Status: Em desenvolvimento</span>
+            </div>
+            <div class="card">
+                <h3>Projeto 3</h3>
+                <p>Blog simples em HTML/CSS</p>
+                <span>Status: Em planejamento</span>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-      <h3>Projeto de pet shop</h3>
-      <strong>Status:</strong> Publicado.
-      <a href="https://github.com/cris-flores12/projpet" target="_blank">
-        <img src="img/github.png" alt="Imagem do projeto pet shop" width="150">
-      </a>
-    </div>
-  </section>
+    <hr>
 
-  <hr>
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <div class="social-links">
+            <a href="https://wa.me/seunumerowhatsapp" target="_blank">
+                <img src="img/whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="https://instagram.com/seuusuario" target="_blank">
+                <img src="img/instagram.png" alt="Instagram">
+            </a>
+            <a href="mailto:seuemail@gmail.com" target="_blank">
+                <img src="img/gmail.png" alt="Gmail">
+            </a>
+            <a href="https://github.com/seuusuario" target="_blank">
+                <img src="img/github.png" alt="GitHub">
+            </a>
+        </div>
+    </section>
 
+    <hr>
 
-  <section id="contato">
-    <h3>Contatos</h3>
-   <a href="mailto:crisfloresrs@gmail.com">
-  <img src="img/gmail.png" alt="Gmail" width="40">
- </a>
-   <a href="https://instagram.com/cris_mflores" target="_blank">
-  <img src="img/instagram.png" alt="Instagram" width="40">
-</a>
-   <a href="https://wa.me/555198470467" target="_blank">
-  <img src="img/whatsapp.png" alt="WhatsApp" width="40">
-</a>
-<a href="https://github.com/cris-flores12" target="_blank">
-  <img src="img/github.png" alt="GitHub" width="40">
-</a>
-   <form>
-      <label for="nome">Nome:</label><br>
-      <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
+    <!-- Rodapé -->
+    <footer>
+        <p>Cristian | Turma X | Programação Web | 2026</p>
+    </footer>
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" placeholder="Digite seu email"><br><br>
+    <!-- Script JS -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
 
-      <label for="mensagem">Mensagem:</label><br>
-      <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea><br><br>
-
-      <button type="submit">Enviar</button>
-  </section>
-
-  <hr>
-
-  <footer>
-    <p>Cristian | Turma Info 3B | Programação Website 1 | 2026</p>
-  </footer>
 </body>
 </html>
